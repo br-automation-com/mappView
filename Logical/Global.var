@@ -1,0 +1,7 @@
+VAR
+	TestVar1 : UINT;
+	TestVar2 : INT;
+	TestVar3 : REAL;
+	ClientInfoCurrent : ClientInfoType;
+	ClientInfo : ARRAY[0..4] OF ClientInfoType;
+END_VAR
