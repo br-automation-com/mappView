@@ -9,7 +9,7 @@
     <!--<Navigation refId="" />-->
   </Navigations>  
   <BindingsSets>
-    <BindingsSet refId="bindingStart" />
+    <BindingsSet refId="bindingGlobal" />
   </BindingsSets>
   <EventBindingsSets>
   	<EventBindingsSet refId="eventbindingStart" />
@@ -33,12 +33,8 @@
   <Themes>
     <Theme refId=""/>
   </Themes>-->
-  <Configurations>
-    <Configuration key="activityCount" value="false" />
-	  <Gestures>
-		  <!--<SystemGesture1 touchPoints="2" />
-		  <SystemGesture2 touchPoints="2" />
-		  <SystemGesture3 touchPoints="2" />-->
-	  </Gestures>
+	<Configurations>
+		<Configuration key="activityCount" value="false" />
+		<Configuration key="zoom" value="true" />
 	</Configurations>
 </vdef:Visualization>
