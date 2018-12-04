@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="contentInfoSample" height="700" width="300" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonBar1" top="0" left="0" width="300" height="240" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="40" left="50" width="200" height="40" zIndex="0" text="Content 1" fontSize="16px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton2" top="100" left="50" width="200" height="40" zIndex="1" text="Content 2" fontSize="16px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton3" top="160" left="50" width="200" height="40" zIndex="2" text="Content 3" fontSize="16px" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="contentNavigation" height="700" width="300" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton2" top="80" left="20" width="260" height="50" zIndex="0" pageId="pageSample" text="Sample" fontSize="16px" />
-    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="20" left="20" width="260" height="50" zIndex="1" pageId="pageStart" text="Start" fontSize="16px" checkedBackColor="rgba(219, 219, 219, 1)" />
+    <Widget xsi:type="widgets.brease.NavigationBar" id="NavigationBar1" top="0" left="0" width="300" height="190" zIndex="0">
+      <Widgets>
+				<Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="30" left="20" width="260" height="50" zIndex="1" pageId="pageStart" text="Start" fontSize="16px" checkedBackColor="rgba(219, 219, 219, 1)" />
+				<Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton2" top="110" left="20" width="260" height="50" zIndex="0" pageId="pageSample" text="Sample" fontSize="16px" />
+	 </Widgets>
+    </Widget>
   </Widgets>
 </Content>

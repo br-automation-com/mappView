@@ -4,8 +4,8 @@
   <Objects>
     <Object Type="File">Visualizat.vis</Object>
     <Object Type="File">Config.mappviewcfg</Object>
+    <Object Type="File">Global.binding</Object>
     <Object Type="File">Start.eventbinding</Object>
-    <Object Type="File">Start.binding</Object>
-    <Object Type="File">contentInfoSample.eventbinding</Object>
+    <Object Type="File">InfoSample.eventbinding</Object>
   </Objects>
 </Package>

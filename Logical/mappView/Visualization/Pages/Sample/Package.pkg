@@ -3,6 +3,9 @@
 <Package SubType="PagePackage" PackageType="PagePackage" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="File" Description="Page description">Sample.page</Object>
-    <Object Type="File">Sample.content</Object>
+    <Object Type="File">Info.content</Object>
+    <Object Type="File">Sample1.content</Object>
+    <Object Type="File">Sample2.content</Object>
+    <Object Type="File">Sample3.content</Object>
   </Objects>
 </Package>

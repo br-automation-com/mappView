@@ -9,16 +9,19 @@
     <!--<Navigation refId="" />-->
   </Navigations>  
   <BindingsSets>
-    <BindingsSet refId="bindingStart" />
+    <BindingsSet refId="bindingGlobal" />
   </BindingsSets>
   <EventBindingsSets>
   	<EventBindingsSet refId="eventbindingStart" />
+	<EventBindingsSet refId="InfoSample_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <!--<Dialog refId="" />-->
   </Dialogs>
   <Contents>
-    <!--<Content refId="" />-->
+    <Content refId="contentSample1" />
+	<Content refId="contentSample2" />
+	<Content refId="contentSample3" />
   </Contents>
   <SnippetsSets>
     <!--<SnippetsSet refId=""/>-->
@@ -27,18 +30,13 @@
     <!--<ExpressionsSet refId=""/>-->
   </ExpressionsSets>
   <VariablesSets>
-    <!--<VariablesSet refId="" />-->
-  </VariablesSets>
-  <!--<StartTheme themeRefId="" />
+	</VariablesSets>
+	<!--<StartTheme themeRefId="" />
   <Themes>
     <Theme refId=""/>
   </Themes>-->
-  <Configurations>
-    <Configuration key="activityCount" value="false" />
-	  <Gestures>
-		  <!--<SystemGesture1 touchPoints="2" />
-		  <SystemGesture2 touchPoints="2" />
-		  <SystemGesture3 touchPoints="2" />-->
-	  </Gestures>
+	<Configurations>
+		<Configuration key="activityCount" value="false" />
+		<Configuration key="zoom" value="true" />
 	</Configurations>
 </vdef:Visualization>

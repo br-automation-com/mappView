@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="InfoSample_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+
+		<!-- Make sure first button is selected when page is loaded />-->
+		<EventBinding>
+			<Source xsi:type="session.Event" refId="::SYSTEM:clientInfo.currentPageId" event="ValueChanged" />
+			<EventHandler condition="newValue=&quot;pageSample&quot; " >
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="contentInfoSample" widgetRefId="ToggleButton1">
+								<Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="1" />						
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">
+						<Action>
+							<Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="contentInfoSample" widgetRefId="ToggleButton2">
+								<Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />						
+							</Target>
+						</Action>
+					</Step>
+					<Step order="2">
+						<Action>
+							<Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="contentInfoSample" widgetRefId="ToggleButton3">
+								<Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />						
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+
+		<!-- Load content depending on button 1-3 />-->
+		<EventBinding id="contentInfoSample.ToggleButton1.Click">
+			<Source contentRefId="contentInfoSample" widgetRefId="ToggleButton1" xsi:type="widgets.brease.ToggleButton.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="contentSample1" areaId="AreaContent" pageId="pageSample"/>
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="contentInfoSample.ToggleButton2.Click">
+			<Source contentRefId="contentInfoSample" widgetRefId="ToggleButton2" xsi:type="widgets.brease.ToggleButton.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="contentSample2" areaId="AreaContent" pageId="pageSample"/>
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="contentInfoSample.ToggleButton3.Click">
+			<Source contentRefId="contentInfoSample" widgetRefId="ToggleButton3" xsi:type="widgets.brease.ToggleButton.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="contentSample3" areaId="AreaContent" pageId="pageSample"/>
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+	</Bindings>
+</EventBindingSet>
