@@ -1,7 +1,6 @@
 VAR
-	TestVar1 : UINT;
-	TestVar2 : INT;
-	TestVar3 : REAL;
 	ClientInfoCurrent : ClientInfoType;
 	ClientInfo : ARRAY[0..4] OF ClientInfoType;
+	idx : USINT;
+	Motor : ARRAY[0..9] OF typMotor;
 END_VAR

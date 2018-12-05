@@ -2,13 +2,11 @@
 PROGRAM _INIT
 	ClientInfoCurrent;
 	ClientInfo;
-	 
+
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	TestVar1 := TestVar1 + 1;
-	TestVar2 := TestVar1 - 1;
-	TestVar3 := TestVar1 + 0.1;
+	Motor[idx].Position := Motor[idx].Position + 1;
 	 
 END_PROGRAM
 

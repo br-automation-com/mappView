@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="contentDyn2" height="180" width="270" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label21" top="20" left="10" width="90" zIndex="0" text="Position" textAlign="right" padding="0px 5px 0px 5px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericSpeed21" top="20" left="110" width="130" zIndex="1" />
+    <Widget xsi:type="widgets.brease.Label" id="Label22" top="70" left="10" width="90" zIndex="2" text="Acceleration" textAlign="right" padding="0px 5px 0px 5px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericAcceleration22" top="70" left="110" width="130" zIndex="3" />
+    <Widget xsi:type="widgets.brease.Label" id="Label23" top="120" left="10" width="90" zIndex="4" text="Velocity" textAlign="right" padding="0px 5px 0px 5px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericVelocity23" top="120" left="110" width="130" zIndex="5" />
+  </Widgets>
+</Content>

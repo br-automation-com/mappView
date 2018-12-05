@@ -16,9 +16,10 @@
   <DefaultView AclId="2">
     <Module Name="&lt;Default&gt;">
       <GlobalVariables Name="Global Variables">
-        <Variable Name="TestVar1" />
-        <Variable Name="TestVar2" />
-        <Variable Name="TestVar3" />
+        <Variable Name="ClientInfo" />
+        <Variable Name="ClientInfoCurrent" />
+        <Variable Name="Motor" EnableArrayElements="True" />
+        <Variable Name="idx" />
       </GlobalVariables>
     </Module>
   </DefaultView>

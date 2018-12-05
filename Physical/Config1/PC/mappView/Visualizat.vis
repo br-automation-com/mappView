@@ -18,8 +18,11 @@
     <!--<Dialog refId="" />-->
   </Dialogs>
   <Contents>
-    <!--<Content refId="" />-->
-  </Contents>
+    <Content refId="contentDyn1" />
+	<Content refId="contentDyn2" />
+	<Content refId="contentDyn3" />
+	<Content refId="contentDyn4" />
+	</Contents>
   <SnippetsSets>
     <!--<SnippetsSet refId=""/>-->
   </SnippetsSets>

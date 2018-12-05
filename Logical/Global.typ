@@ -1,5 +1,11 @@
 
 TYPE
+	typMotor : 	STRUCT 
+		Position : REAL;
+		Acceleration : UINT;
+		Velocity : UINT;
+		IsVisible : USINT;
+	END_STRUCT;
 	ClientInfoType : 	STRUCT 
 		userId : WSTRING[80];
 		isValid : BOOL;
