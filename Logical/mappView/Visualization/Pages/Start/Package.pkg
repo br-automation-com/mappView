@@ -4,9 +4,5 @@
   <Objects>
     <Object Type="File" Description="Page description">Start.page</Object>
     <Object Type="File">Start.content</Object>
-    <Object Type="File">Dynamic1.content</Object>
-    <Object Type="File">Dynamic2.content</Object>
-    <Object Type="File">Dynamic3.content</Object>
-    <Object Type="File">Dynamic4.content</Object>
   </Objects>
 </Package>

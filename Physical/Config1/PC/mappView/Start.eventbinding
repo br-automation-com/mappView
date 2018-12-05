@@ -1,29 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EventBindingSet id="eventbindingStart" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  	<Bindings>
-		<!-- Load content for each field when page is loaded />-->
+	<Bindings>
+		<!-- Load content for each field when page sample is loaded />-->
 		<EventBinding>
 			<Source xsi:type="session.Event" refId="::SYSTEM:clientInfo.currentPageId" event="ValueChanged" />
 			
+			<!-- Read data points to check if content should be visible />-->	
 			<Operand name="ContentIsVisible1" datatype="BOOL">
 				<ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::AsGlobalPV:Motor[1].IsVisible" >
 					<Method xsi:type="opcUa.NodeAction.GetValue" />
 				</ReadTarget>
 			</Operand>	
-			
-			<EventHandler condition="newValue=&quot;pageStart&quot; " >
-				<Sequence>
-					<Step order="0">
-						<Action>
-							<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="contentStart" widgetRefId="ContentControl1">
-								<Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="contentDyn1"/>
-							</Target>
-						</Action>
-					</Step>
-
-				</Sequence>
+			<Operand name="ContentIsVisible2" datatype="BOOL">
+				<ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::AsGlobalPV:Motor[2].IsVisible" >
+					<Method xsi:type="opcUa.NodeAction.GetValue" />
+				</ReadTarget>
+			</Operand>	
+			<Operand name="ContentIsVisible3" datatype="BOOL">
+				<ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::AsGlobalPV:Motor[3].IsVisible" >
+					<Method xsi:type="opcUa.NodeAction.GetValue" />
+				</ReadTarget>
+			</Operand>	
+			<Operand name="ContentIsVisible4" datatype="BOOL">
+				<ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::AsGlobalPV:Motor[4].IsVisible" >
+					<Method xsi:type="opcUa.NodeAction.GetValue" />
+				</ReadTarget>
+			</Operand>	
+						
+			<!-- Load content for each field when page sample is loaded and content is set to visible />-->	
+			<EventHandler condition="newValue=&quot;pageSample&quot; AND ContentIsVisible1=true" >
+				<Action>
+					<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="contentSample" widgetRefId="ContentControl1">
+						<Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="contentDyn1"/>
+					</Target>
+				</Action>
 			</EventHandler>
+			<EventHandler condition="newValue=&quot;pageSample&quot; AND ContentIsVisible2=true" >
+				<Action>
+					<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="contentSample" widgetRefId="ContentControl2">
+						<Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="contentDyn2"/>
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=&quot;pageSample&quot; AND ContentIsVisible3=true" >
+				<Action>
+					<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="contentSample" widgetRefId="ContentControl3">
+						<Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="contentDyn4"/>
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=&quot;pageSample&quot; AND ContentIsVisible4=true" >
+				<Action>
+					<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="contentSample" widgetRefId="ContentControl4">
+						<Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="contentDyn4"/>
+					</Target>
+				</Action>
+			</EventHandler>
+									
 		</EventBinding>
-
 	</Bindings>
 </EventBindingSet>
