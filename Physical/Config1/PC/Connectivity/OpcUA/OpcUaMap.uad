@@ -4,22 +4,28 @@
     <ACLAliases>
       <ACL Id="1">
         <ACE RoleId="1" RoleName="Administrators" Access="0x017F" />
+        <ACE RoleId="2" RoleName="Everyone" Access="0x015F" />
       </ACL>
       <ACL Id="2">
         <ACE RoleId="1" RoleName="Administrators" Access="0x01FF" />
+        <ACE RoleId="2" RoleName="Everyone" Access="0x015F" />
+      </ACL>
+      <ACL Id="3">
+        <ACE RoleId="1" RoleName="Administrators" Access="0x01FF" />
+        <ACE RoleId="2" RoleName="Everyone" Access="0x01FF" />
       </ACL>
     </ACLAliases>
     <EURangeViolationAliases />
     <EURangesAliases />
     <EngineeringUnitAliases />
   </Aliases>
-  <DefaultView AclId="2">
+  <DefaultView AclId="3">
     <Module Name="&lt;Default&gt;">
       <GlobalVariables Name="Global Variables">
         <Variable Name="ClientInfo" />
         <Variable Name="ClientInfoCurrent" />
-        <Variable Name="Motor" EnableArrayElements="True" />
         <Variable Name="idx" />
+        <Variable Name="Motor" EnableArrayElements="True" />
       </GlobalVariables>
     </Module>
   </DefaultView>

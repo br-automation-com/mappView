@@ -6,8 +6,8 @@
 			<Source xsi:type="session.Event" refId="::SYSTEM:clientInfo.currentPageId" event="ValueChanged" />
 			
 			<Operand name="ContentIsVisible1" datatype="BOOL">
-				<ReadTarget xsi:type="session.VariableAction.Read " refId="::AsGlobalPV:Motor[1].IsVisible" >
-					<Method xsi:type="session.VariableAction.GetValue" />
+				<ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::AsGlobalPV:Motor[1].IsVisible" >
+					<Method xsi:type="opcUa.NodeAction.GetValue" />
 				</ReadTarget>
 			</Operand>	
 			

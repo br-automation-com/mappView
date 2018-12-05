@@ -4,7 +4,7 @@ TYPE
 		Position : REAL;
 		Acceleration : UINT;
 		Velocity : UINT;
-		IsVisible : USINT;
+		IsVisible : BOOL;
 	END_STRUCT;
 	ClientInfoType : 	STRUCT 
 		userId : WSTRING[80];
