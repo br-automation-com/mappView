@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BindingsSet id="bindingGlobal" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Bindings>
-	<!--< Binding for dynamic content 1 />-->
-  	<Binding mode="twoWay">
-		<Source xsi:type="opcUa" refId="::AsGlobalPV:Motor[1].Position" attribute="value" />
-		<Target xsi:type="brease" contentRefId="contentDyn1" widgetRefId="NumericSpeed11" attribute="value" />
-	</Binding>
+		<!--< Binding for dynamic content 1 />-->
+	  	<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:Motor[1].Position" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentDyn1" widgetRefId="NumericSpeed11" attribute="value" />
+		</Binding>
+			<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:Motor[1].Acceleration" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentDyn1" widgetRefId="NumericAcceleration12" attribute="value" />
+		</Binding>
 		<Binding mode="twoWay">
-		<Source xsi:type="opcUa" refId="::AsGlobalPV:Motor[1].Acceleration" attribute="value" />
-		<Target xsi:type="brease" contentRefId="contentDyn1" widgetRefId="NumericAcceleration12" attribute="value" />
-	</Binding>
-	<Binding mode="twoWay">
-		<Source xsi:type="opcUa" refId="::AsGlobalPV:Motor[1].Velocity" attribute="value" />
-		<Target xsi:type="brease" contentRefId="contentDyn1" widgetRefId="NumericVelocity13" attribute="value" />
-	</Binding>
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:Motor[1].Velocity" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentDyn1" widgetRefId="NumericVelocity13" attribute="value" />
+		</Binding>
 		<!--< Binding for dynamic content 2 />-->
 		<Binding mode="twoWay">
 			<Source xsi:type="opcUa" refId="::AsGlobalPV:Motor[2].Position" attribute="value" />
@@ -53,6 +53,27 @@
 			<Source xsi:type="opcUa" refId="::AsGlobalPV:Motor[4].Velocity" attribute="value" />
 			<Target xsi:type="brease" contentRefId="contentDyn4" widgetRefId="NumericVelocity43" attribute="value" />
 		</Binding>
+		
+		<!--< Binding for enable/disable content 1 />-->
+	  	<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:Motor[1].IsVisible" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentStart" widgetRefId="ToggleButton1" attribute="value" />
+		</Binding>
+		<!--< Binding for enable/disable content 2 />-->
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:Motor[2].IsVisible" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentStart" widgetRefId="ToggleButton2" attribute="value" />
+		</Binding>
+		<!--< Binding for enable/disable content 3 />-->
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:Motor[3].IsVisible" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentStart" widgetRefId="ToggleButton3" attribute="value" />
+		</Binding>
+		<!--< Binding for enable/disable content 4 />-->
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:Motor[4].IsVisible" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentStart" widgetRefId="ToggleButton4" attribute="value" />
+		</Binding>
 
-  </Bindings>
+</Bindings>
 </BindingsSet>

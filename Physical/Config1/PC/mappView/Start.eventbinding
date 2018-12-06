@@ -35,6 +35,13 @@
 					</Target>
 				</Action>
 			</EventHandler>
+			<EventHandler condition="newValue=&quot;pageSample&quot; AND ContentIsVisible1=false" >
+				<Action>
+					<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="contentSample" widgetRefId="ContentControl1">
+						<Method xsi:type="widgets.brease.ContentControl.Action.UnloadContent" />
+					</Target>
+				</Action>
+			</EventHandler>			
 			<EventHandler condition="newValue=&quot;pageSample&quot; AND ContentIsVisible2=true" >
 				<Action>
 					<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="contentSample" widgetRefId="ContentControl2">
@@ -42,10 +49,24 @@
 					</Target>
 				</Action>
 			</EventHandler>
+			<EventHandler condition="newValue=&quot;pageSample&quot; AND ContentIsVisible2=false" >
+				<Action>
+					<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="contentSample" widgetRefId="ContentControl2">
+						<Method xsi:type="widgets.brease.ContentControl.Action.UnloadContent" />
+					</Target>
+				</Action>
+			</EventHandler>			
 			<EventHandler condition="newValue=&quot;pageSample&quot; AND ContentIsVisible3=true" >
 				<Action>
 					<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="contentSample" widgetRefId="ContentControl3">
 						<Method xsi:type="widgets.brease.ContentControl.Action.LoadContent" contentId="contentDyn4"/>
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=&quot;pageSample&quot; AND ContentIsVisible3=false" >
+				<Action>
+					<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="contentSample" widgetRefId="ContentControl3">
+						<Method xsi:type="widgets.brease.ContentControl.Action.UnloadContent" />
 					</Target>
 				</Action>
 			</EventHandler>
@@ -56,7 +77,13 @@
 					</Target>
 				</Action>
 			</EventHandler>
-									
+			<EventHandler condition="newValue=&quot;pageSample&quot; AND ContentIsVisible4=false" >
+				<Action>
+					<Target xsi:type="widgets.brease.ContentControl.Action" contentRefId="contentSample" widgetRefId="ContentControl4">
+						<Method xsi:type="widgets.brease.ContentControl.Action.UnloadContent" />
+					</Target>
+				</Action>
+			</EventHandler>						
 		</EventBinding>
 	</Bindings>
 </EventBindingSet>
