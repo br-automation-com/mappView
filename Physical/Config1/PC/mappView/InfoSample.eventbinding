@@ -4,8 +4,8 @@
 
 		<!-- Make sure first button is selected when page is loaded />-->
 		<EventBinding>
-			<Source xsi:type="session.Event" refId="::SYSTEM:clientInfo.currentPageId" event="ValueChanged" />
-			<EventHandler condition="newValue=&quot;pageSample&quot; " >
+			<Source xsi:type="clientSystem.Event" event="ContentLoaded" />
+			<EventHandler condition="contentId=&quot;contentInfoSample&quot;" >
 				<Sequence>
 					<Step order="0">
 						<Action>
