@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<OpcUaSource FileVersion="4" ArVersion="B4.45">
+<OpcUaSource FileVersion="4" ArVersion="B4.53">
   <Aliases>
     <ACLAliases>
       <ACL Id="1">
         <ACE RoleId="1" RoleName="Administrators" Access="0x017F" />
+        <ACE RoleId="2" RoleName="Everyone" Access="0x015F" />
       </ACL>
       <ACL Id="2">
         <ACE RoleId="1" RoleName="Administrators" Access="0x01FF" />
+        <ACE RoleId="2" RoleName="Everyone" Access="0x015F" />
       </ACL>
     </ACLAliases>
     <EURangeViolationAliases />
