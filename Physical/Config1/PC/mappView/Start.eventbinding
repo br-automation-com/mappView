@@ -1,7 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EventBindingSet id="eventbindingStart" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   	<Bindings>
-    
+		<EventBinding>
+			<!-- Trigger when new value />-->
+			<Source xsi:type="opcUa.Event" refId="::AsGlobalPV:SessionPLC[0]" event="ValueChanged" />
 
+			<!-- Read additional value from PLC />-->	
+			<Operand name="slotId" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="::SYSTEM:clientInfo.slotId" >
+					<Method xsi:type="session.VariableAction.GetValue" />
+				</ReadTarget>
+			</Operand>
+
+			<!-- Execute command when conditions are met />-->	
+			<EventHandler condition="slotId=0" >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="SessionVar" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="=newValue" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding>
+			<!-- Trigger when new value />-->
+			<Source xsi:type="opcUa.Event" refId="::AsGlobalPV:SessionPLC[1]" event="ValueChanged" />
+
+			<!-- Read additional value from PLC />-->	
+			<Operand name="slotId" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="::SYSTEM:clientInfo.slotId" >
+					<Method xsi:type="session.VariableAction.GetValue" />
+				</ReadTarget>
+			</Operand>
+
+			<!-- Execute command when conditions are met />-->	
+			<EventHandler condition="slotId=1" >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="SessionVar" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="=newValue" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding> 
+
+		<EventBinding>
+			<!-- Trigger when new value />-->
+			<Source xsi:type="opcUa.Event" refId="::AsGlobalPV:SessionPLC[2]" event="ValueChanged" />
+
+			<!-- Read additional value from PLC />-->	
+			<Operand name="slotId" datatype="ANY_INT">
+				<ReadTarget xsi:type="session.VariableAction.Read" refId="::SYSTEM:clientInfo.slotId" >
+					<Method xsi:type="session.VariableAction.GetValue" />
+				</ReadTarget>
+			</Operand>
+
+			<!-- Execute command when conditions are met />-->	
+			<EventHandler condition="slotId=2" >
+				<Action>
+					<Target xsi:type="session.VariableAction" refId="SessionVar" >
+						<Method xsi:type="session.VariableAction.SetValueNumber" value="=newValue" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding> 
 	</Bindings>
 </EventBindingSet>

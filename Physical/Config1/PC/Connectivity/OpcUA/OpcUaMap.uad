@@ -25,7 +25,9 @@
         <Variable Name="TestVar1" />
         <Variable Name="TestVar2" />
         <Variable Name="TestVar3" />
+        <Variable Name="SessionPLC" EnableArrayElements="True" />
       </GlobalVariables>
+      <Task Name="Program" />
     </Module>
   </DefaultView>
 </OpcUaSource>

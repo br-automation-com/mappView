@@ -27,7 +27,7 @@
     <!--<ExpressionsSet refId=""/>-->
   </ExpressionsSets>
   <VariablesSets>
-    <!--<VariablesSet refId="" />-->
+    <VariablesSet refId="mySessionVars" />
   </VariablesSets>
   <!--<StartTheme themeRefId="" />
   <Themes>

@@ -4,4 +4,5 @@ VAR
 	TestVar3 : REAL;
 	ClientInfoCurrent : ClientInfoType;
 	ClientInfo : ARRAY[0..4] OF ClientInfoType;
+	SessionPLC : ARRAY[0..4] OF USINT;
 END_VAR

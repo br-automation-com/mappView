@@ -1,5 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BindingsSet id="bindingGlobal" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Bindings>
-  </Bindings>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BindingsSet xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="bindingGlobal">
+	<Bindings>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="SessionVar" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentStart" widgetRefId="NumericInput1" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWayToSource">
+			<Source xsi:type="listElement">
+				<Selector xsi:type="session" refId="::SYSTEM:clientInfo.slotId" attribute="value" />
+				<be:List xsi:type="be:opcUa" attribute="value">
+					<bt:Element index="0" refId="::AsGlobalPV:SessionPLC[0]" />
+					<bt:Element index="1" refId="::AsGlobalPV:SessionPLC[1]" />
+					<bt:Element index="2" refId="::AsGlobalPV:SessionPLC[2]" />
+				</be:List>
+			</Source>
+			<Target xsi:type="session" refId="SessionVar" attribute="value" />
+		</Binding>
+		
+	</Bindings>
 </BindingsSet>

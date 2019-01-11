@@ -2,6 +2,7 @@
 PROGRAM _INIT
 	ClientInfoCurrent;
 	ClientInfo;
+	SessionPLC;
 	 
 END_PROGRAM
 
