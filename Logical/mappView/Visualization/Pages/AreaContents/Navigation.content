@@ -1,7 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="contentNavigation" height="700" width="300" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton2" top="80" left="20" width="260" height="50" zIndex="0" pageId="pageSample" text="Sample" fontSize="16px" />
-    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="20" left="20" width="260" height="50" zIndex="1" pageId="pageStart" text="Start" fontSize="16px" checkedBackColor="rgba(219, 219, 219, 1)" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="85" left="0" width="305" height="825" zIndex="0" childPositioning="relative" borderStyle="none">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="30" left="-3" width="310" height="50" zIndex="1" text="Machine Settings" backColor="rgba(64, 64, 64, 1)" textColor="rgba(255, 255, 255, 1)" textAlign="left" fontSize="26px" bold="true" checkedBackColor="rgba(64, 64, 64, 1)" checkedTextColor="rgba(255, 255, 255, 1)" checkedBorderColor="rgba(91, 124, 112, 1)" />
+        <Widget xsi:type="widgets.brease.NavigationBar" id="MachineSettingsBar" top="40" left="0" width="300" height="165" zIndex="0" visible="false">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton2" top="5" left="0" width="305" height="50" zIndex="10" pageId="pageSample" text="Front Settings" backColor="rgba(128, 128, 128, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="24px" padding="0px 0px" />
+            <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton4" top="60" left="-1" width="305" height="50" zIndex="11" pageId="pageStart" text="Main Settings" backColor="rgba(128, 128, 128, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="24px" />
+            <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton5" top="115" left="-1" width="305" height="50" zIndex="12" pageId="pageId1" text="Back Settings" backColor="rgba(128, 128, 128, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="24px" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton2" top="45" left="-3" width="310" height="50" zIndex="3" text="System Settings" backColor="rgba(64, 64, 64, 1)" textColor="rgba(255, 255, 255, 1)" textAlign="left" fontSize="26px" bold="true" checkedBackColor="rgba(64, 64, 64, 1)" checkedTextColor="rgba(255, 255, 255, 1)" checkedBorderColor="rgba(91, 124, 112, 1)" />
+        <Widget xsi:type="widgets.brease.NavigationBar" id="SystemSettingsBar" top="45" left="0" width="300" height="162" zIndex="10" visible="false">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton12" top="5" left="0" width="305" height="50" zIndex="10" pageId="pageId1" text="Front System" backColor="rgba(128, 128, 128, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="24px" padding="0px 0px" />
+            <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton14" top="60" left="-1" width="305" height="50" zIndex="11" pageId="pageId1" text="Main System" backColor="rgba(128, 128, 128, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="24px" />
+            <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton15" top="115" left="-1" width="305" height="50" zIndex="12" pageId="pageId1" text="Back System" backColor="rgba(128, 128, 128, 1)" textColor="rgba(255, 255, 255, 1)" fontSize="24px" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
   </Widgets>
 </Content>
