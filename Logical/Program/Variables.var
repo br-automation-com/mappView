@@ -1,0 +1,3 @@
+VAR
+	NewValue : BOOL;
+END_VAR
