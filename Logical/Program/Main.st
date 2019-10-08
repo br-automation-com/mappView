@@ -2,7 +2,6 @@
 PROGRAM _INIT
 	ClientInfoCurrent;
 	ClientInfo;
-	NewValue := FALSE;
 	TestVar1 := TestVar1 + 1;
 	 
 END_PROGRAM
