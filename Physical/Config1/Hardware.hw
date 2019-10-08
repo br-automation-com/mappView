@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.4.6.71?>
+<?AutomationStudio Version=4.5.4.123?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
   <Module Name="PC" Type="PC_any" Version="1.1.0.0" OrderNumber="PC">
     <Parameter ID="ConfigurationID" Value="mappViewSample_Config1" />
     <Parameter ID="ActivateOpcUa" Value="1" />
+    <Parameter ID="OpcUaActivateAuditEvents" Value="1" />
+    <Parameter ID="OpcUa_Security_AdminRole" Value="Administrators" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
   </Module>
 </Hardware>

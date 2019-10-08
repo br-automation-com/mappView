@@ -1,0 +1,4 @@
+VAR
+	MpAuditTrail_0 : MpAuditTrail;
+	TestVar3 : REAL;
+END_VAR

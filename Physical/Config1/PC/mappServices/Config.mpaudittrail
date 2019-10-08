@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gAuditTrail" Type="mpaudittrail">
+    <Group ID="Audit">
+      <Group ID="Events">
+        <Property ID="[0]" Value="16" />
+        <Property ID="[1]" Value="2" />
+        <Property ID="[2]" Value="18" />
+        <Property ID="[3]" Value="19" />
+      </Group>
+      <Selector ID="TextSource" Value="TXT">
+        <Property ID="OutputFormat" Value="MpAudit/Event/Root" />
+      </Selector>
+    </Group>
+    <Group ID="Monitor">
+      <Group ID="0">
+        <Property ID="pv" Value="::TestVar1" />
+        <Property ID="id" Value="" />
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

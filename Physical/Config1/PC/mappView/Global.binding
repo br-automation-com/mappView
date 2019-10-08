@@ -5,5 +5,13 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:TestVar1" attribute="value" />
 <Target xsi:type="brease" contentRefId="contentStart" widgetRefId="NumericInput1" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="mapp" refId="gAuditTrail" attribute="link" />
+<Target xsi:type="brease" contentRefId="contentStart" widgetRefId="AuditList1" attribute="mpLink" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:TestVar3" attribute="node" />
+<Target xsi:type="brease" contentRefId="contentStart" widgetRefId="NumericInput2" attribute="node" />
+</Binding>
 </Bindings>
 </BindingsSet>

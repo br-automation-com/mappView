@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.4.6.71 SP?>
+<?AutomationStudio Version=4.5.4.123 SP?>
 <Package SubType="TextsPackage" PackageType="TextsPackage" xmlns="http://br-automation.co.at/AS/Package">
-  <Objects />
+  <Objects>
+    <Object Type="File">TxtEvent.tmx</Object>
+    <Object Type="File">TxtCustom.tmx</Object>
+    <Object Type="File">TxtDatapoints.tmx</Object>
+    <Object Type="File">TxtUser.tmx</Object>
+    <Object Type="File">TxtRecipe.tmx</Object>
+    <Object Type="File">TxtEventF.tmx</Object>
+    <Object Type="File">TxtUserF.tmx</Object>
+    <Object Type="File">TxtRecipeF.tmx</Object>
+  </Objects>
 </Package>

@@ -9,6 +9,8 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	TestVar2 := TestVar1 - 1;
 	TestVar3 := TestVar1 + 0.1;
+	
+	MpAuditTrail_0(MpLink := ADR(gAuditTrail), Enable := 1);
 	 
 END_PROGRAM
 
