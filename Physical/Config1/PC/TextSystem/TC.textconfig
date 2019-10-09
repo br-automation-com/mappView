@@ -13,6 +13,7 @@
     <Group ID="TargetFiles">
       <Property ID="TargetFile[1]" Value="mappView.Resources.Texts.TxtEvent.tmx" />
       <Property ID="TargetFile[2]" Value="mappView.Resources.Texts.TxtDatapoints.tmx" />
+      <Property ID="TargetFile[3]" Value="mappView.Resources.Texts.TxtCustom.tmx" />
     </Group>
   </Element>
 </Configuration>

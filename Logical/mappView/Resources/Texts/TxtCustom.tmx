@@ -5,9 +5,15 @@
     <prop type="x-BR-TS:Namespace">MpAudit/Custom</prop>
   </header>
   <body>
-    <tu tuid="TODO">
+    <tu tuid="ValueChange">
+      <tuv xml:lang="fr">
+        <seg>[%msg]</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>[%msg]</seg>
+      </tuv>
       <tuv xml:lang="en">
-        <seg>Add Custom event texts here</seg>
+        <seg>[%msg]</seg>
       </tuv>
     </tu>
   </body>
