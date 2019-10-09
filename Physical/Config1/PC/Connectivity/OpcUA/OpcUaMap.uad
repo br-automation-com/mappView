@@ -14,6 +14,7 @@
       </GlobalVariables>
       <Task Name="Program">
         <Variable AuditEvents="True" Name="TestVar3" />
+        <Variable Name="cmdExport" />
       </Task>
     </Module>
   </DefaultView>

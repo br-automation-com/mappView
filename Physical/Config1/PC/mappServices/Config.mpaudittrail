@@ -11,6 +11,9 @@
       <Selector ID="TextSource" Value="TXT">
         <Property ID="OutputFormat" Value="MpAudit/Event/Root" />
       </Selector>
+      <Group ID="Export">
+        <Property ID="Encrypt" Value="FALSE" />
+      </Group>
     </Group>
     <Group ID="Monitor">
       <Group ID="0">

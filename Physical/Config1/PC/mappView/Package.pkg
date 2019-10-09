@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.5.3.86 SP?>
+<?AutomationStudio Version=4.5.4.123 SP?>
 <Package SubType="mappViewControl" PackageType="mappViewControl" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="File">Visualizat.vis</Object>

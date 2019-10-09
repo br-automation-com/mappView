@@ -9,7 +9,8 @@ PROGRAM _CYCLIC
 	TestVar2 := TestVar1 - 1;
 	
 	// Main function call for mappAudit
-	MpAuditTrail_0(MpLink := ADR(gAuditTrail), Enable := 1);
+	MpAuditTrail_0(MpLink := ADR(gAuditTrail), Enable := 1, DeviceName := ADR('HD'), Export := cmdExport);
+	cmdExport := FALSE;
 	
 	// Create a custom event when TestVar3 is 0
 	IF(TestVar3 = 0 AND TestVar3old <> 0) THEN

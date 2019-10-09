@@ -2,4 +2,5 @@ VAR
 	MpAuditTrail_0 : MpAuditTrail;
 	TestVar3 : REAL;
 	TestVar3old : REAL;
+	cmdExport : BOOL;
 END_VAR

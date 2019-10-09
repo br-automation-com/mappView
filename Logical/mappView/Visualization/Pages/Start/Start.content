@@ -11,5 +11,6 @@
     <Widget xsi:type="widgets.brease.Label" id="Label2" top="100" left="45" width="85" zIndex="3" text="Test Var 1" textAlign="right" fontSize="16px" padding="0px 5px 0px 5px" />
     <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput2" top="140" left="130" width="145" height="35" zIndex="4" />
     <Widget xsi:type="widgets.brease.Label" id="Label3" top="145" left="15" width="115" zIndex="5" text="OPC Test Var3" textAlign="right" fontSize="16px" padding="0px 5px 0px 5px" />
+    <Widget xsi:type="widgets.brease.Button" id="btnExport" top="140" left="820" width="165" height="50" zIndex="6" text="Export Data" fontSize="16px" />
   </Widgets>
 </Content>
