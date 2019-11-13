@@ -1,13 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<OpcUaSource FileVersion="4" ArVersion="B4.45">
+<OpcUaSource FileVersion="4" ArVersion="B4.53">
   <Aliases>
     <ACLAliases>
       <ACL Id="1">
         <ACE RoleId="1" RoleName="Administrators" Access="0x017F" />
-        <ACE RoleId="2" RoleName="Everyone" Access="0x015F" />
-      </ACL>
-      <ACL Id="2">
-        <ACE RoleId="1" RoleName="Administrators" Access="0x01FF" />
         <ACE RoleId="2" RoleName="Everyone" Access="0x015F" />
       </ACL>
       <ACL Id="3">
@@ -17,7 +13,9 @@
     </ACLAliases>
     <EURangeViolationAliases />
     <EURangesAliases />
-    <EngineeringUnitAliases />
+    <EngineeringUnitAliases>
+      <EngineeringUnit Id="1" UnitId="4408652" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="Grad Celsius" Symbol="°C" />
+    </EngineeringUnitAliases>
   </Aliases>
   <DefaultView AclId="3">
     <Module Name="&lt;Default&gt;">
@@ -25,10 +23,11 @@
         <Variable Name="TestVar1" />
         <Variable Name="TestVar2" />
         <Variable Name="TestVar3" />
+        <Variable Name="gReport" AutomaticEnable="True" />
+        <Variable Name="ChartData" EngineeringUnitId="1" />
+        <Variable Name="ChartXaxis" />
       </GlobalVariables>
-      <Task Name="Program">
-        <Variable Name="NewValue" />
-      </Task>
+      <Task Name="Program" />
     </Module>
   </DefaultView>
 </OpcUaSource>

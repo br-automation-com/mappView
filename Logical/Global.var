@@ -2,6 +2,6 @@ VAR
 	TestVar1 : UINT;
 	TestVar2 : INT;
 	TestVar3 : REAL;
-	ClientInfoCurrent : ClientInfoType;
-	ClientInfo : ARRAY[0..4] OF ClientInfoType;
+	ChartData : ARRAY[0..99] OF DINT;
+	ChartXaxis : ARRAY[0..99] OF TIME;
 END_VAR
