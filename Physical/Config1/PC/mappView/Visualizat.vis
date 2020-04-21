@@ -21,7 +21,7 @@
     <!--<Content refId="" />-->
   </Contents>
   <SnippetsSets>
-    <!--<SnippetsSet refId=""/>-->
+    <SnippetsSet refId="TextSnippets"/>
   </SnippetsSets>
   <ExpressionsSets>
     <!--<ExpressionsSet refId=""/>-->

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="en" Type="Language">
+    <Property ID="LanguageName" Value="English" />
+    <Property ID="NativeName" Value="English" />
+    <Property ID="IsDesignLanguage" Value="TRUE" />
+  </Element>
+  <Element ID="de" Type="Language">
+    <Property ID="LanguageName" Value="German" />
+    <Property ID="NativeName" Value="Deutsch" />
+  </Element>
+  <Element ID="fr" Type="Language">
+    <Property ID="LanguageName" Value="French" />
+    <Property ID="NativeName" Value="français" />
+  </Element>
+</Configuration>

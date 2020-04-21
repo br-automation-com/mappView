@@ -2,6 +2,9 @@
 <Content id="contentStart" height="700" width="1000" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
     <Widget xsi:type="widgets.brease.Label" id="Label1" top="30" left="390" width="250" zIndex="0" text="Start Page" textAlign="center" fontSize="20px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="125" left="160" width="145" height="35" zIndex="1" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="125" left="385" width="145" height="35" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="125" left="200" width="145" zIndex="2" text="Status Index" fontSize="22px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="190" left="200" width="145" zIndex="3" text="Status Text" fontSize="22px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="StatusTextOutput" top="185" left="385" width="430" zIndex="4" borderWidth="1px" borderStyle="solid" fontSize="22px" />
   </Widgets>
 </Content>
