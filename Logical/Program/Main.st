@@ -1,19 +1,29 @@
 
 PROGRAM _INIT
-	ClientInfoCurrent;
-	ClientInfo;
-	TestVar1 := TestVar1 + 1;
-	 
+
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	TestVar2 := TestVar1 - 1;
-	TestVar3 := TestVar1 + 0.1;
-	 
+	// Get PLC time and date
+	IF(visGetDateTime) THEN
+		DTGetTime_01.enable := 1;
+		DTGetTime_01();
+		IF(DTGetTime_01.status = 0) THEN
+			visGetDateTime := 0;
+			visDateTime := DTGetTime_01.DT1;
+		END_IF
+	END_IF
+	
+	// Get PLC time and date
+	IF(visSetDateTime) THEN
+		DTSetTime_01.enable := 1;
+		DTSetTime_01.DT1 := visDateTime;
+		DTSetTime_01();
+		IF(DTSetTime_01.status = 0) THEN
+			visSetDateTime := 0;
+		END_IF
+	END_IF
+
 END_PROGRAM
 
-PROGRAM _EXIT
-	(* Insert code here *)
-	 
-END_PROGRAM
 

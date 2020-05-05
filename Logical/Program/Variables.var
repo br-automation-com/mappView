@@ -1,0 +1,7 @@
+VAR
+	visDateTime : DATE_AND_TIME;
+	DTGetTime_01 : DTGetTime;
+	visGetDateTime : BOOL;
+	DTSetTime_01 : DTSetTime;
+	visSetDateTime : BOOL;
+END_VAR

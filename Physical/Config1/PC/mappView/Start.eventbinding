@@ -1,15 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EventBindingSet id="eventbindingStart" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Bindings>
-		<EventBinding id="contentStart.NumericInput1.ValueChanged">
-			<Source contentRefId="contentStart" widgetRefId="NumericInput1" xsi:type="widgets.brease.NumericInput.Event" event="ValueChanged" />
+		
+		<!--< Event binding for get time />-->
+		<EventBinding id="contentStart.btnGetTimeDate.Click">
+			<Source contentRefId="contentStart" widgetRefId="btnGetTimeDate" xsi:type="widgets.brease.Button.Event" event="Click" />
 			<EventHandler>
 				<Action>
-					<Target xsi:type="opcUa.NodeAction" refId="::Program:NewValue" >
+					<Target xsi:type="opcUa.NodeAction" refId="::Program:visGetDateTime" >
 						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
 					</Target>
 				</Action>
 			</EventHandler>
 		</EventBinding>
+		
+		<!--< Event binding for set time />-->
+		<EventBinding id="contentStart.btnSetTimeDate.Click">
+			<Source contentRefId="contentStart" widgetRefId="btnSetTimeDate" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::Program:visSetDateTime" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
 	</Bindings>
 </EventBindingSet>
